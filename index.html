@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Little Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
+  </head>
+  <body class="wh f">
+    <div class="cover wh f c" >
+        <div class="cover_overlay wh f"></div>
+        <div class="cover_cn c">
+          <div class="cover_sub_cn r">
+            <div class="gameover backcover n">
+              Gameover !
+            </div>
+            <div class="plane r">
+              <img src="images/plane.png" class="wh" alt="">
+            </div>
+            <div class="ttl">Strick On Air</div>
+            <div class="score backcover">Score: <span>0</span></div>
+            <div class="play_again backcover c" onclick="game_start()"><i class="fa fa-repeat" aria-hidden="true"></i></div>
+            <div class="play c "  onclick="game_start()"><i class="fa fa-play" aria-hidden="true"></i></div>
+            <div class="proggress_bar c ">0%</div>
+          </div>
+        </div>
+    </div>
+    <!-- cover page -->
+
+
+    <main class="wh c f"  style="display:none;">
+      <div class="main_cn">
+          <div class="blocks">
+            <!-- data  speed = block speed
+                 data dir= data direction (1= left to right , 0= right to left)
+                 data-pos= block position
+                 data-rotate= block should rotate or not
+            -->
+              <img src="images/enemy.png" alt="" class="block1" data-speed="70" data-dir="1" data-pos="0" data-rotate="true">
+              <img src="images/enemy2.png" alt="" class="block2" data-speed="75" data-dir="0" data-pos="100" data-rotate="false">
+              <img src="images/enemy3.png" alt="" class="block3" data-speed="100" data-dir="1" data-pos="0" data-rotate="false">
+              <img src="images/enemy.png" alt="" class="block4" data-speed="80" data-dir="0" data-pos="100" data-rotate="true" style="transform:rotateY(180deg);">
+              <img src="images/enemy4.png" alt="" class="block5" data-speed="85" data-dir="1" data-pos="0" data-rotate="false">
+          </div>
+          <!-- blocks  -->
+          <div class="control_bar">
+            <div class="lin"></div>
+            <i class="fa fa-angle-left arr_left arr_cn c" aria-hidden="true" onclick="controller_left();controller_left();controller_left();controller_left();"></i>
+            <i class="fa fa-angle-right arr_right arr_cn c" aria-hidden="true" onclick="controller_right();controller_right();controller_right();controller_right();controller_right();"></i>
+            <i class="fa fa-fire   arr_fire arr_cn c" onclick="controller_fire()" aria-hidden="true"></i>
+            <div class="lin lin2"></div>
+            <div class="bullet_cn"></div>
+            <div class="fighter" data-pos="50" data-bullet="10">
+              <img src="images/fighter.svg">
+            </div>
+            <div class="score_html" data-score="0">Score: <span>0</span></div>
+            <div class="bullets" data-bullets="5">
+              <img src="images/bullet_show.svg" alt="">
+              <img src="images/bullet_show.svg" alt="">
+              <img src="images/bullet_show.svg" alt="">
+              <img src="images/bullet_show.svg" alt="">
+              <img src="images/bullet_show.svg" alt="">
+            </div>
+          </div>
+          <div class="test"></div>
+          <div class="bullet_test"></div>
+          <!-- controller  -->
+      </div>
+      <!-- main cn  -->
+    </main>
+    <!-- main  -->
+  <script src="javascript.js"></script>
+  </body>
+</html>
