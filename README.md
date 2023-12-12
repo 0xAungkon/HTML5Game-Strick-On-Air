@@ -14,9 +14,15 @@
     <a href="https://github.com/onlycoder000/"><strong>Explore My Other Repo »</strong></a>
     <br />
     <br />
-    <img src="images/demo/demo1.png">
-    <img src="images/demo/demo2.png">
-    <img src="images/demo/demo.gif">
   </p>
 </div>
+<br>
+<br>
+<h3>Example 1:</h3>
+<img src="images/demo/demo1.png">
+<h3>Example 2:</h3>
+<img src="images/demo/demo2.png">
+<h3>Example 3:(Open This Image New Tab and wait for 3-5 Sec , If Needed)</h3>
+<img src="images/demo/demo.gif">
 
+Thank You So Much
