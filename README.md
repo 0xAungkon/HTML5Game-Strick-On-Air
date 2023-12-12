@@ -19,7 +19,7 @@
 <br>
 <br>
 <h3>Example 1:</h3>
-<img src="images/demo/demo1.png">
+<img width="100px" src="images/demo/demo1.png">
 <h3>Example 2:</h3>
 <img src="images/demo/demo2.png">
 <h3>Example 3:(Play The Git/Video File to check the Demo )</h3>
