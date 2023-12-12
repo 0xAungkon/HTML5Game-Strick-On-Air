@@ -22,7 +22,7 @@
 <img src="images/demo/demo1.png">
 <h3>Example 2:</h3>
 <img src="images/demo/demo2.png">
-<h3>Example 3:(Open This Image New Tab and wait for 3-5 Sec , If Needed)</h3>
+<h3>Example 3:(Play The Git/Video File to check the Demo )</h3>
 <img src="images/demo/demo.gif">
 
 Thank You So Much
